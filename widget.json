@@ -1,0 +1,5 @@
+{
+  "name": "Recent Users",
+  "description": "A simple widget to get most recent users from Heroku",
+  "author": "Oren Teich"
+}

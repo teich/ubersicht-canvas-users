@@ -16,11 +16,8 @@ style: """
   font-family: Avenir Next
   font-weight: 500
   line-height: 1.5
-  top: 50px
-  left: 50px
+  top: 250px
+  left: 10px
   width: 340px
 
-  h1
-    font-size: 20px
-    margin: 0px 0px 0px 0px
 """

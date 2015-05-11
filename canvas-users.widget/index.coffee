@@ -1,4 +1,4 @@
-command: "canvas-users.widget/getUsers.sh"
+command: "curl -s http://intense-brook-2486.herokuapp.com/recent-users"
 # command: "ls"
 # the refresh frequency in milliseconds
 refreshFrequency: 600000            # Update every 10 minutes

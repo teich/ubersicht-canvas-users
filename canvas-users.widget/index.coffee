@@ -1,4 +1,4 @@
-command: "curl -s http://intense-brook-2486.herokuapp.com/recent-users"
+command: "curl -s https://canvas-stats-prod.herokuapp.com/recent-users"
 # command: "ls"
 # the refresh frequency in milliseconds
 refreshFrequency: 600000            # Update every 10 minutes
@@ -6,8 +6,11 @@ refreshFrequency: 600000            # Update every 10 minutes
 # render gets called after the shell command has executed. The command's output
 # is passed in as a string. Whatever it returns will get rendered as HTML.
 render: (output) -> """
-  <p>#{output}</p>
+  <div class='canvas-users'><p>#{output}</p></div>
 """
+
+update: (output, domEl) ->
+  $(domEl).find('canvas-users').html(output)
 
 # the CSS style for this widget, written using Stylus
 # (http://learnboost.github.io/stylus/)
